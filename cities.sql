@@ -22,11 +22,11 @@ DROP TABLE IF EXISTS `states`;
 CREATE TABLE `states` (
   `id` int NOT NULL,
   `name` varchar(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `state_code` int NOT NULL,
+  `state_id` int NOT NULL,
   `country_id` mediumint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (1001, 'Alegría-Dulantzi', 1, NULL),
 (1002, 'Amurrio', 1, NULL),
 (1003, 'Aramaio', 1, NULL),
@@ -527,7 +527,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (5131, 'Mirueña de los Infanzones', 5, NULL),
 (5132, 'Mombeltrán', 5, NULL),
 (5133, 'Monsalupe', 5, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (5134, 'Moraleja de Matacabras', 5, NULL),
 (5135, 'Muñana', 5, NULL),
 (5136, 'Muñico', 5, NULL),
@@ -1028,7 +1028,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (8136, 'Montornu00e8s del Vallu00e8s', 8, NULL),
 (8137, 'Montseny', 8, NULL),
 (8138, 'Moià', 8, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (8139, 'Mura', 8, NULL),
 (8140, 'Navarcles', 8, NULL),
 (8141, 'Navàs', 8, NULL),
@@ -1529,7 +1529,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (9429, 'Villaescusa la Sombría', 9, NULL),
 (9430, 'Villaespasa', 9, NULL),
 (9431, 'Villafranca Montes de Oca', 9, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (9432, 'Villafruela', 9, NULL),
 (9433, 'Villagalijo', 9, NULL),
 (9434, 'Villagonzalo Pedernales', 9, NULL),
@@ -2030,7 +2030,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (13052, 'Malagón', 13, NULL),
 (13053, 'Manzanares', 13, NULL),
 (13054, 'Membrilla', 13, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (13055, 'Mestanza', 13, NULL),
 (13056, 'Miguelturra', 13, NULL),
 (13057, 'Montiel', 13, NULL),
@@ -2531,7 +2531,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (17046, 'Castellfollit de la Roca', 17, NULL),
 (17047, 'Castelló d\'Empúries', 17, NULL),
 (17048, 'Castell-Platja d\'Aro', 17, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (17049, 'Celrà', 17, NULL),
 (17050, 'Cervià de Ter', 17, NULL),
 (17051, 'Cistella', 17, NULL),
@@ -3032,7 +3032,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (19183, 'Milmarcos', 19, NULL),
 (19184, 'Millana', 19, NULL),
 (19185, 'La Miñosa', 19, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (19186, 'Mirabueno', 19, NULL),
 (19187, 'Miralrío', 19, NULL),
 (19188, 'Mochales', 19, NULL),
@@ -3533,7 +3533,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (22903, 'San Miguel del Cinca', 22, NULL),
 (22904, 'La Sotonera', 22, NULL),
 (22905, 'Lupiñén-Ortilla', 22, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (22906, 'Santa María de Dulcis', 22, NULL),
 (22907, 'Aínsa-Sobrarbe', 22, NULL),
 (22908, 'Hoz y Costean', 22, NULL),
@@ -4034,7 +4034,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (25217, 'Tàrrega', 25, NULL),
 (25218, 'Tarrés', 25, NULL),
 (25219, 'Tarroja de Segarra', 25, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (25220, 'Térmens', 25, NULL),
 (25221, 'Tírvia', 25, NULL),
 (25222, 'Tiurana', 25, NULL),
@@ -4535,7 +4535,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (29035, 'Cañete la Real', 29, NULL),
 (29036, 'Carratraca', 29, NULL),
 (29037, 'Cartajima', 29, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (29038, 'Cártama', 29, NULL),
 (29039, 'Casabermeja', 29, NULL),
 (29040, 'Casarabonela', 29, NULL),
@@ -5036,7 +5036,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (33023, 'El Franco', 33, NULL),
 (33024, 'Gijón', 33, NULL),
 (33025, 'Gozón', 33, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (33026, 'Grado', 33, NULL),
 (33027, 'Grandas de Salime', 33, NULL),
 (33028, 'Ibias', 33, NULL),
@@ -5537,7 +5537,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (37173, 'Lumbrales', 37, NULL),
 (37174, 'Macotera', 37, NULL),
 (37175, 'Machacón', 37, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (37176, 'Madroñal', 37, NULL),
 (37177, 'El Maíllo', 37, NULL),
 (37178, 'Malpartida', 37, NULL),
@@ -6038,7 +6038,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (40162, 'Prádena', 40, NULL),
 (40163, 'Puebla de Pedraza', 40, NULL),
 (40164, 'Rapariegos', 40, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (40165, 'Rebollo', 40, NULL),
 (40166, 'Remondo', 40, NULL),
 (40168, 'Riaguas de San Bartolomé', 40, NULL),
@@ -6539,7 +6539,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (43145, 'La Selva del Camp', 43, NULL),
 (43146, 'Senan', 43, NULL),
 (43147, 'Solivella', 43, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (43148, 'Tarragona', 43, NULL),
 (43149, 'Tivenys', 43, NULL),
 (43150, 'Tivissa', 43, NULL),
@@ -7040,7 +7040,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (46020, 'l\'Alcúdia de Crespins', 46, NULL),
 (46021, 'Aldaia', 46, NULL),
 (46022, 'Alfafar', 46, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (46023, 'Alfauir', 46, NULL),
 (46024, 'Alfara de la Baronia', 46, NULL),
 (46025, 'Alfara del Patriarca', 46, NULL),
@@ -7541,7 +7541,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (48029, 'Etxebarri', 48, NULL),
 (48030, 'Etxebarria', 48, NULL),
 (48031, 'Elantxobe', 48, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (48032, 'Elorrio', 48, NULL),
 (48033, 'Ereño', 48, NULL),
 (48034, 'Ermua', 48, NULL),
@@ -8042,7 +8042,7 @@ INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
 (50176, 'Morata de Jiloca', 50, NULL),
 (50177, 'Morés', 50, NULL),
 (50178, 'Moros', 50, NULL);
-INSERT INTO `states` (`id`, `name`, `state_code`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `state_id`, `country_id`) VALUES
 (50179, 'Moyuela', 50, NULL),
 (50180, 'Mozota', 50, NULL),
 (50181, 'Muel', 50, NULL),
